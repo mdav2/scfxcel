@@ -1,0 +1,16 @@
+memory 1 GB
+
+molecule h2o {
+0 1
+N 
+N 1 2.8
+}
+
+set basis aug-cc-pvdz
+set guess gwh
+set scf_type pk
+set df_basis_guess true
+set DIIS false
+set reference rhf
+set stability_analysis check
+energy('scf')

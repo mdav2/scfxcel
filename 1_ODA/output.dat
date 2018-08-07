@@ -1,0 +1,299 @@
+
+    -----------------------------------------------------------------------
+          Psi4: An Open-Source Ab Initio Electronic Structure Package
+                               Psi4 1.3a1.dev104 
+
+                         Git: Rev {master} e378979 
+
+
+    R. M. Parrish, L. A. Burns, D. G. A. Smith, A. C. Simmonett,
+    A. E. DePrince III, E. G. Hohenstein, U. Bozkaya, A. Yu. Sokolov,
+    R. Di Remigio, R. M. Richard, J. F. Gonthier, A. M. James,
+    H. R. McAlexander, A. Kumar, M. Saitow, X. Wang, B. P. Pritchard,
+    P. Verma, H. F. Schaefer III, K. Patkowski, R. A. King, E. F. Valeev,
+    F. A. Evangelista, J. M. Turney, T. D. Crawford, and C. D. Sherrill,
+    J. Chem. Theory Comput. 13(7) pp 3185--3197 (2017).
+    (doi: 10.1021/acs.jctc.7b00174)
+
+
+                         Additional Contributions by
+    P. Kraus, H. Kruse, M. H. Lechner, M. C. Schieber, and R. A. Shaw
+
+    -----------------------------------------------------------------------
+
+
+    Psi4 started on: Thursday, 02 August 2018 06:40PM
+
+    Process ID: 8924
+    Host:       elizabeth
+    PSIDATADIR: /usr/local/psi4/share/psi4
+    Memory:     500.0 MiB
+    Threads:    1
+    
+  ==> Input File <==
+
+--------------------------------------------------------------------------
+memory 1 GB
+
+molecule h2o {
+0 1
+N 
+N 1 2.8
+}
+
+set basis aug-cc-pvdz
+set guess gwh
+set scf_type pk
+set df_basis_guess true
+set DIIS false
+set reference rhf
+set stability_analysis check
+energy('scf')
+--------------------------------------------------------------------------
+
+  Memory set to 953.674 MiB by Python driver.
+
+*** tstart() called on elizabeth
+*** at Thu Aug  2 18:40:59 2018
+
+   => Loading Basis Set <=
+
+    Name: AUG-CC-PVDZ
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1-2 entry N          line   214 file /usr/local/psi4/share/psi4/basis/aug-cc-pvdz.gbs 
+
+
+         ---------------------------------------------------------
+                                   SCF
+            by Justin Turney, Rob Parrish, Andy Simmonett
+                             and Daniel Smith
+                              RHF Reference
+                        1 Threads,    953 MiB Core
+         ---------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: d2h
+    Full point group: D_inf_h
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         N            0.000000000000     0.000000000000    -1.400000000000    14.003074004780
+         N            0.000000000000     0.000000000000     1.400000000000    14.003074004780
+
+  Running in d2h symmetry.
+
+  Rotational constants: A = ************  B =      0.30711  C =      0.30711 [cm^-1]
+  Rotational constants: A = ************  B =   9206.77956  C =   9206.77956 [MHz]
+  Nuclear repulsion =    9.260601150325000
+
+  Charge       = 0
+  Multiplicity = 1
+  Electrons    = 14
+  Nalpha       = 7
+  Nbeta        = 7
+
+  ==> Algorithm <==
+
+  SCF Algorithm Type is PK.
+  DIIS disabled.
+  MOM disabled.
+  Fractional occupation disabled.
+  Guess Type is GWH.
+  Energy threshold   = 1.00e-06
+  Density threshold  = 1.00e-06
+  Integral threshold = 0.00e+00
+
+  ==> Primary Basis <==
+
+  Basis Set: AUG-CC-PVDZ
+    Blend: AUG-CC-PVDZ
+    Number of shells: 18
+    Number of basis function: 46
+    Number of Cartesian functions: 50
+    Spherical Harmonics?: true
+    Max angular momentum: 2
+
+  ==> Pre-Iterations <==
+
+   -------------------------------------------------------
+    Irrep   Nso     Nmo     Nalpha   Nbeta   Ndocc  Nsocc
+   -------------------------------------------------------
+     Ag        11      11       0       0       0       0
+     B1g        2       2       0       0       0       0
+     B2g        5       5       0       0       0       0
+     B3g        5       5       0       0       0       0
+     Au         2       2       0       0       0       0
+     B1u       11      11       0       0       0       0
+     B2u        5       5       0       0       0       0
+     B3u        5       5       0       0       0       0
+   -------------------------------------------------------
+    Total      46      46       7       7       7       0
+   -------------------------------------------------------
+
+  ==> Integral Setup <==
+
+  Using in-core PK algorithm.
+   Calculation information:
+      Number of atoms:                   2
+      Number of AO shells:              18
+      Number of primitives:             50
+      Number of atomic orbitals:        50
+      Number of basis functions:        46
+
+      Integral cutoff                 1.00e-12
+      Number of threads:                 1
+
+  Performing in-core PK
+  Using 1169642 doubles for integral storage.
+  We computed 14689 shell quartets total.
+  Whereas there are 14706 unique shell quartets.
+
+  ==> DiskJK: Disk-Based J/K Matrices <==
+
+    J tasked:                  Yes
+    K tasked:                  Yes
+    wK tasked:                  No
+    Memory (MB):               715
+    Schwarz Cutoff:          1E-12
+
+    OpenMP threads:              1
+
+  Minimum eigenvalue in the overlap matrix is 1.9087525641E-02.
+  Using Symmetric Orthogonalization.
+
+  SCF Guess: Generalized Wolfsberg-Helmholtz.
+
+  ==> Iterations <==
+
+                        Total Energy        Delta E     RMS |[F,P]|
+
+   @RHF iter   1:  -107.58037158561463   -1.07580e+02   8.02617e-02 
+   @RHF iter   2:  -108.02250647587773   -4.42135e-01   1.40708e-02 
+   @RHF iter   3:  -108.05820347441588   -3.56970e-02   5.05999e-03 
+   @RHF iter   4:  -108.06251433997025   -4.31087e-03   1.74853e-03 
+   @RHF iter   5:  -108.06303877728573   -5.24437e-04   6.15215e-04 
+   @RHF iter   6:  -108.06310268271621   -6.39054e-05   2.13849e-04 
+   @RHF iter   7:  -108.06311048895148   -7.80624e-06   7.47903e-05 
+   @RHF iter   8:  -108.06311144439834   -9.55447e-07   2.61650e-05 
+   @RHF iter   9:  -108.06311156157325   -1.17175e-07   9.11127e-06 
+   @RHF iter  10:  -108.06311157597480   -1.44016e-08   3.20460e-06 
+   @RHF iter  11:  -108.06311157774937   -1.77457e-09   1.11260e-06 
+   @RHF iter  12:  -108.06311157796874   -2.19373e-10   3.93426e-07 
+    SO Integrals not on disk, computing...done.
+	Presorting SO-basis two-electron integrals.
+	Sorting File: SO Ints (nn|nn) nbuckets = 1
+	Transforming the one-electron integrals and constructing Fock matrices
+	Starting first half-transformation.
+	Sorting half-transformed integrals.
+	First half integral transformation complete.
+	Starting second half-transformation.
+	Two-electron integral transformation complete.
+	Starting first half-transformation.
+	Sorting half-transformed integrals.
+	First half integral transformation complete.
+	Starting second half-transformation.
+	Two-electron integral transformation complete.
+    Lowest singlet (RHF->RHF) stability eigenvalues:-
+      Au -0.294411      B1u -0.294411      B3g -0.259395      B2g -0.259395 
+     B1u -0.247811       Au 0.017967       B3g 0.045927       B2g 0.045927  
+     B3u 0.299842       B2u 0.299842        Ag 0.315192       B1g 0.315192  
+      Ag 0.327915       B3g 0.329981       B2g 0.329981       B1g 0.343175  
+     B2u 0.356377       B3u 0.356377       B1u 0.359306        Ag 0.364628  
+      Au 0.378370       B1u 0.378370       B2u 0.386366       B3u 0.386366  
+      Au 0.390941       B1u 0.391088       B2g 0.417075       B3g 0.417075  
+     B3g 0.463356       B2g 0.463356        Ag 0.467767       B2u 0.582521  
+     B3u 0.582521        Ag 0.601286       B1g 0.667386       B1g 0.693440  
+     B2u 0.702236       B3u 0.702236       B1g 0.769802        Au 0.824318  
+    
+    Lowest triplet (RHF->UHF) stability eigenvalues:-
+     B1u -0.513784      B1u -0.441155       Au -0.441155      B3g -0.404317 
+     B2g -0.404317      B1u -0.381261       Au 0.017967       B2g 0.041652  
+     B3g 0.041652       B3u 0.226009       B2u 0.226009        Ag 0.253923  
+      Ag 0.276663        Ag 0.291668       B1g 0.291668       B2g 0.295073  
+     B3g 0.295073       B1u 0.317614       B3u 0.324767       B2u 0.324767  
+     B1g 0.343175       B1u 0.353692       B3u 0.357445       B2u 0.357445  
+     B2g 0.366732       B3g 0.366732        Au 0.368679        Ag 0.373849  
+      Ag 0.383508       B2u 0.384938       B3u 0.384938        Au 0.390941  
+     B2g 0.413265       B3g 0.413265       B1g 0.635788       B3u 0.641539  
+     B2u 0.641539       B1g 0.693440       B1g 0.763681        Au 0.805671  
+    
+
+  ==> Post-Iterations <==
+
+    Orbital Energies [Eh]
+    ---------------------
+
+    Doubly Occupied:                                                      
+
+       1Ag   -15.861323     1B1u  -15.861223     2Ag    -1.064405  
+       2B1u   -1.033555     3Ag    -0.402693     1B2u   -0.368079  
+       1B3u   -0.368079  
+
+    Virtual:                                                              
+
+       1B2g   -0.169558     1B3g   -0.169558     3B1u   -0.126770  
+       4Ag     0.126758     4B1u    0.132902     2B3u    0.160398  
+       2B2u    0.160398     2B2g    0.194622     2B3g    0.194622  
+       5Ag     0.214491     5B1u    0.288172     3B3u    0.584865  
+       3B2u    0.584865     6Ag     0.631176     1B1g    0.631176  
+       7Ag     0.673849     6B1u    0.691134     1Au     0.691134  
+       3B2g    0.815991     3B3g    0.815991     7B1u    0.834535  
+       8Ag     1.014306     4B3u    1.031235     4B2u    1.031235  
+       4B2g    1.080845     4B3g    1.080845     8B1u    1.273914  
+       9Ag     1.286981     9B1u    1.523296     5B3u    2.372721  
+       5B2u    2.372721     2B1g    2.374032    10Ag     2.374032  
+      10B1u    2.408447     2Au     2.408447     5B2g    2.485173  
+       5B3g    2.485173    11Ag     2.524418    11B1u    2.537122  
+
+    Final Occupation by Irrep:
+             Ag   B1g   B2g   B3g    Au   B1u   B2u   B3u 
+    DOCC [     3,    0,    0,    0,    0,    2,    1,    1 ]
+
+  Energy converged.
+
+  @RHF Final Energy:  -108.06311157796874
+
+   => Energetics <=
+
+    Nuclear Repulsion Energy =              9.2606011503249999
+    One-Electron Energy =                -164.7287103009075508
+    Two-Electron Energy =                  47.4049975726138229
+    Total Energy =                       -108.0631115779687406
+
+
+
+Properties will be evaluated at   0.000000,   0.000000,   0.000000 [a0]
+
+Properties computed using the SCF density matrix
+
+  Nuclear Dipole Moment: [e a0]
+     X:     0.0000      Y:     0.0000      Z:    -0.0000
+
+  Electronic Dipole Moment: [e a0]
+     X:     0.0000      Y:     0.0000      Z:     0.0000
+
+  Dipole Moment: [e a0]
+     X:     0.0000      Y:     0.0000      Z:    -0.0000     Total:     0.0000
+
+  Dipole Moment: [D]
+     X:     0.0000      Y:     0.0000      Z:    -0.0000     Total:     0.0000
+
+
+*** tstop() called on elizabeth at Thu Aug  2 18:40:59 2018
+Module time:
+	user time   =       0.26 seconds =       0.00 minutes
+	system time =       0.01 seconds =       0.00 minutes
+	total time  =          0 seconds =       0.00 minutes
+Total time:
+	user time   =       0.26 seconds =       0.00 minutes
+	system time =       0.01 seconds =       0.00 minutes
+	total time  =          0 seconds =       0.00 minutes
+
+    Psi4 stopped on: Thursday, 02 August 2018 06:40PM
+    Psi4 wall time for execution: 0:00:00.30
+
+*** Psi4 exiting successfully. Buy a developer a beer!
