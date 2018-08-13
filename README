@@ -1,0 +1,5 @@
+ODA -> Optimal Damping Algorithm
+look at "2_optimization" folder for reference implementations.
+RHF uses homebrewed JK matrices, UHF is using libJK. Updating RHF to libJK soon.
+
+MMD
