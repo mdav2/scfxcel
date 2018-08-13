@@ -64,11 +64,18 @@ def assemble_Dkp(C,Dk,nocc):
             Dkp[m][n] = 2*Dkp[m][n]
     return Dkp
 
+def sum_mats(m1, m2):
+    l = m1.shape[0]
+    total = 0
+    for mu in range(l):
+        for nu in range(l):
+            total += m1[mu][nu]*m2[nu][mu] 
+    return total
+
 def compute_energy(h, nu, Dk):
     #Dk is Dk
     r = h.shape[0]
     elec_energy = np.einsum('mn,nm->',(h + 0.5*nu), Dk)
-
     return elec_energy
 
 def assemble_nu(g,gt,Dk):

@@ -1940,3 +1940,638 @@ HF: Form C                          :      0.000u      0.000s      0.001w     12
 HF: Form D                          :      0.000u      0.000s      0.000w     12 calls
 
 ***********************************************************
+
+Host: ccqc-bullpen1
+
+Timers On : Tue Aug  7 18:03:35 2018
+Timers Off: Tue Aug  7 18:03:37 2018
+
+Wall Time:        2.56 seconds
+
+
+-----------------------------------------------------------
+
+***********************************************************
+
+Host: ccqc-bullpen1
+
+Timers On : Tue Aug  7 18:05:41 2018
+Timers Off: Tue Aug  7 18:05:42 2018
+
+Wall Time:        1.48 seconds
+
+
+-----------------------------------------------------------
+
+***********************************************************
+
+Host: ccqc-bullpen1
+
+Timers On : Tue Aug  7 18:06:41 2018
+Timers Off: Tue Aug  7 18:09:08 2018
+
+Wall Time:      147.09 seconds
+
+
+-----------------------------------------------------------
+
+***********************************************************
+
+Host: ccqc-bullpen1
+
+Timers On : Tue Aug  7 18:09:59 2018
+Timers Off: Tue Aug  7 18:11:30 2018
+
+Wall Time:       90.72 seconds
+
+
+-----------------------------------------------------------
+
+***********************************************************
+
+Host: ccqc-bullpen1
+
+Timers On : Tue Aug  7 18:12:13 2018
+Timers Off: Tue Aug  7 18:12:13 2018
+
+Wall Time:        0.23 seconds
+
+
+-----------------------------------------------------------
+
+***********************************************************
+
+Host: ccqc-bullpen1
+
+Timers On : Tue Aug  7 18:12:24 2018
+Timers Off: Tue Aug  7 18:13:43 2018
+
+Wall Time:       78.96 seconds
+
+
+-----------------------------------------------------------
+
+***********************************************************
+
+Host: ccqc-bullpen1
+
+Timers On : Tue Aug  7 18:14:29 2018
+Timers Off: Tue Aug  7 18:15:48 2018
+
+Wall Time:       79.25 seconds
+
+
+-----------------------------------------------------------
+
+***********************************************************
+
+Host: ccqc-bullpen1
+
+Timers On : Tue Aug  7 18:18:28 2018
+Timers Off: Tue Aug  7 18:19:14 2018
+
+Wall Time:       45.60 seconds
+
+
+-----------------------------------------------------------
+
+***********************************************************
+
+Host: ccqc-bullpen1
+
+Timers On : Tue Aug  7 18:25:34 2018
+Timers Off: Tue Aug  7 18:28:11 2018
+
+Wall Time:      156.41 seconds
+
+
+-----------------------------------------------------------
+
+***********************************************************
+
+Host: ccqc-bullpen1
+
+Timers On : Tue Aug  7 18:45:13 2018
+Timers Off: Tue Aug  7 18:48:10 2018
+
+Wall Time:      177.41 seconds
+
+
+-----------------------------------------------------------
+
+***********************************************************
+
+Host: ccqc-bullpen1
+
+Timers On : Tue Aug  7 18:58:17 2018
+Timers Off: Tue Aug  7 18:58:19 2018
+
+Wall Time:        2.06 seconds
+
+Total PK formation time     :      1.150u      0.000s      0.688w      1 calls
+HF: Form H                  :      0.000u      0.000s      0.112w      1 calls
+HF: Form S/X                :      0.000u      0.000s      0.000w      1 calls
+HF: Guess                   :      0.000u      0.000s      0.000w      1 calls
+HF: Form G                  :      0.617u      0.017s      0.356w    100 calls
+JK: D                       :      0.000u      0.000s      0.001w    100 calls
+JK: USO2AO                  :      0.000u      0.000s      0.007w    100 calls
+JK: JK                      :      0.583u      0.017s      0.336w    100 calls
+PK computes JK              :      0.583u      0.017s      0.336w    100 calls
+JK: AO2USO                  :      0.017u      0.000s      0.008w    100 calls
+HF: Form F                  :      0.017u      0.000s      0.001w    100 calls
+HF: DIIS                    :      0.000u      0.000s      0.005w    100 calls
+HF: Form C                  :      0.000u      0.000s      0.016w    100 calls
+HF: Form D                  :      0.000u      0.000s      0.001w    100 calls
+
+-----------------------------------------------------------
+Total PK formation time     :      1.150u      0.000s      0.688w      1 calls
+HF: Form H                  :      0.000u      0.000s      0.112w      1 calls
+HF: Form S/X                :      0.000u      0.000s      0.000w      1 calls
+HF: Guess                   :      0.000u      0.000s      0.000w      1 calls
+HF: Form G                  :      0.617u      0.017s      0.356w    100 calls
+| JK: D                     :      0.000u      0.000s      0.001w    100 calls
+| JK: USO2AO                :      0.000u      0.000s      0.007w    100 calls
+| JK: JK                    :      0.583u      0.017s      0.336w    100 calls
+| | PK computes JK          :      0.583u      0.017s      0.336w    100 calls
+| JK: AO2USO                :      0.017u      0.000s      0.008w    100 calls
+HF: Form F                  :      0.017u      0.000s      0.001w    100 calls
+HF: DIIS                    :      0.000u      0.000s      0.005w    100 calls
+HF: Form C                  :      0.000u      0.000s      0.016w    100 calls
+HF: Form D                  :      0.000u      0.000s      0.001w    100 calls
+
+***********************************************************
+
+Host: ccqc-bullpen1
+
+Timers On : Tue Aug  7 19:00:21 2018
+Timers Off: Tue Aug  7 19:00:23 2018
+
+Wall Time:        1.77 seconds
+
+Total PK formation time     :      1.433u      0.000s      0.866w      1 calls
+HF: Form H                  :      0.000u      0.000s      0.001w      1 calls
+HF: Form S/X                :      0.000u      0.000s      0.000w      1 calls
+HF: Guess                   :      0.000u      0.000s      0.000w      1 calls
+HF: Form G                  :      0.083u      0.000s      0.041w     16 calls
+JK: D                       :      0.000u      0.000s      0.000w     16 calls
+JK: USO2AO                  :      0.000u      0.000s      0.001w     16 calls
+JK: JK                      :      0.083u      0.000s      0.038w     16 calls
+PK computes JK              :      0.083u      0.000s      0.038w     16 calls
+JK: AO2USO                  :      0.000u      0.000s      0.001w     16 calls
+HF: Form F                  :      0.000u      0.000s      0.000w     16 calls
+HF: DIIS                    :      0.000u      0.000s      0.003w     16 calls
+DIISManager::add_entry      :      0.000u      0.000s      0.001w     16 calls
+DIISManager::extrapolate    :      0.000u      0.000s      0.002w     15 calls
+bMatrix setup               :      0.000u      0.000s      0.001w     15 calls
+bMatrix pseudoinverse       :      0.000u      0.000s      0.001w     15 calls
+New vector                  :      0.000u      0.000s      0.000w     15 calls
+HF: Form C                  :      0.000u      0.000s      0.002w     16 calls
+HF: Form D                  :      0.000u      0.000s      0.000w     16 calls
+
+-----------------------------------------------------------
+Total PK formation time     :      1.433u      0.000s      0.866w      1 calls
+HF: Form H                  :      0.000u      0.000s      0.001w      1 calls
+HF: Form S/X                :      0.000u      0.000s      0.000w      1 calls
+HF: Guess                   :      0.000u      0.000s      0.000w      1 calls
+HF: Form G                  :      0.083u      0.000s      0.041w     16 calls
+| JK: D                     :      0.000u      0.000s      0.000w     16 calls
+| JK: USO2AO                :      0.000u      0.000s      0.001w     16 calls
+| JK: JK                    :      0.083u      0.000s      0.038w     16 calls
+| | PK computes JK          :      0.083u      0.000s      0.038w     16 calls
+| JK: AO2USO                :      0.000u      0.000s      0.001w     16 calls
+HF: Form F                  :      0.000u      0.000s      0.000w     16 calls
+HF: DIIS                    :      0.000u      0.000s      0.003w     16 calls
+| DIISManager::add_entry    :      0.000u      0.000s      0.001w     16 calls
+| DIISManager::extrapolate  :      0.000u      0.000s      0.002w     15 calls
+| | bMatrix setup           :      0.000u      0.000s      0.001w     15 calls
+| | bMatrix pseudoinverse   :      0.000u      0.000s      0.001w     15 calls
+| | New vector              :      0.000u      0.000s      0.000w     15 calls
+HF: Form C                  :      0.000u      0.000s      0.002w     16 calls
+HF: Form D                  :      0.000u      0.000s      0.000w     16 calls
+
+***********************************************************
+
+Host: ccqc-bullpen1
+
+Timers On : Tue Aug  7 19:00:51 2018
+Timers Off: Tue Aug  7 19:00:53 2018
+
+Wall Time:        2.20 seconds
+
+Total PK formation time     :      1.700u      0.017s      1.032w      1 calls
+HF: Form H                  :      0.000u      0.000s      0.001w      1 calls
+HF: Form S/X                :      0.000u      0.000s      0.000w      1 calls
+HF: Guess                   :      0.017u      0.000s      0.000w      1 calls
+HF: Form G                  :      0.083u      0.000s      0.058w     16 calls
+JK: D                       :      0.000u      0.000s      0.000w     16 calls
+JK: USO2AO                  :      0.000u      0.000s      0.001w     16 calls
+JK: JK                      :      0.083u      0.000s      0.055w     16 calls
+PK computes JK              :      0.083u      0.000s      0.055w     16 calls
+JK: AO2USO                  :      0.000u      0.000s      0.001w     16 calls
+HF: Form F                  :      0.000u      0.000s      0.000w     16 calls
+HF: DIIS                    :      0.000u      0.000s      0.004w     16 calls
+DIISManager::add_entry      :      0.000u      0.000s      0.001w     16 calls
+DIISManager::extrapolate    :      0.000u      0.000s      0.002w     15 calls
+bMatrix setup               :      0.000u      0.000s      0.001w     15 calls
+bMatrix pseudoinverse       :      0.000u      0.000s      0.001w     15 calls
+New vector                  :      0.000u      0.000s      0.001w     15 calls
+HF: Form C                  :      0.017u      0.000s      0.002w     16 calls
+HF: Form D                  :      0.000u      0.000s      0.000w     16 calls
+
+-----------------------------------------------------------
+Total PK formation time     :      1.700u      0.017s      1.032w      1 calls
+HF: Form H                  :      0.000u      0.000s      0.001w      1 calls
+HF: Form S/X                :      0.000u      0.000s      0.000w      1 calls
+HF: Guess                   :      0.017u      0.000s      0.000w      1 calls
+HF: Form G                  :      0.083u      0.000s      0.058w     16 calls
+| JK: D                     :      0.000u      0.000s      0.000w     16 calls
+| JK: USO2AO                :      0.000u      0.000s      0.001w     16 calls
+| JK: JK                    :      0.083u      0.000s      0.055w     16 calls
+| | PK computes JK          :      0.083u      0.000s      0.055w     16 calls
+| JK: AO2USO                :      0.000u      0.000s      0.001w     16 calls
+HF: Form F                  :      0.000u      0.000s      0.000w     16 calls
+HF: DIIS                    :      0.000u      0.000s      0.004w     16 calls
+| DIISManager::add_entry    :      0.000u      0.000s      0.001w     16 calls
+| DIISManager::extrapolate  :      0.000u      0.000s      0.002w     15 calls
+| | bMatrix setup           :      0.000u      0.000s      0.001w     15 calls
+| | bMatrix pseudoinverse   :      0.000u      0.000s      0.001w     15 calls
+| | New vector              :      0.000u      0.000s      0.001w     15 calls
+HF: Form C                  :      0.017u      0.000s      0.002w     16 calls
+HF: Form D                  :      0.000u      0.000s      0.000w     16 calls
+
+***********************************************************
+
+Host: ccqc-bullpen1
+
+Timers On : Tue Aug  7 19:02:32 2018
+Timers Off: Tue Aug  7 19:02:32 2018
+
+Wall Time:        0.16 seconds
+
+
+-----------------------------------------------------------
+
+***********************************************************
+
+Host: ccqc-bullpen1
+
+Timers On : Tue Aug  7 19:02:45 2018
+Timers Off: Tue Aug  7 19:03:02 2018
+
+Wall Time:       17.08 seconds
+
+Total PK formation time     :      3.733u      0.033s      2.262w      3 calls
+HF: Form H                  :      0.000u      0.000s      0.001w      1 calls
+HF: Form S/X                :      0.000u      0.000s      0.000w      1 calls
+HF: Guess                   :      0.000u      0.000s      0.000w      1 calls
+HF: Form G                  :      0.167u      0.017s      0.097w     30 calls
+JK: D                       :      0.000u      0.000s      0.003w     87 calls
+JK: USO2AO                  :      0.083u      0.000s      0.049w     87 calls
+JK: JK                      :     23.467u      0.017s     14.084w     87 calls
+PK computes JK              :     23.467u      0.017s     14.084w     87 calls
+JK: AO2USO                  :      0.117u      0.000s      0.046w     87 calls
+HF: Form F                  :      0.000u      0.000s      0.000w     30 calls
+HF: DIIS                    :      0.017u      0.000s      0.007w     30 calls
+DIISManager::add_entry      :      0.000u      0.000s      0.001w     30 calls
+DIISManager::extrapolate    :      0.017u      0.000s      0.003w     29 calls
+bMatrix setup               :      0.000u      0.000s      0.001w     29 calls
+bMatrix pseudoinverse       :      0.000u      0.000s      0.001w     29 calls
+New vector                  :      0.017u      0.000s      0.001w     29 calls
+HF: Form C                  :      0.017u      0.000s      0.005w     30 calls
+HF: Form D                  :      0.000u      0.000s      0.000w     30 calls
+
+-----------------------------------------------------------
+Total PK formation time     :      3.733u      0.033s      2.262w      3 calls
+HF: Form H                  :      0.000u      0.000s      0.001w      1 calls
+HF: Form S/X                :      0.000u      0.000s      0.000w      1 calls
+HF: Guess                   :      0.000u      0.000s      0.000w      1 calls
+HF: Form G                  :      0.167u      0.017s      0.097w     30 calls
+| JK: D                     :      0.000u      0.000s      0.000w     30 calls
+| JK: USO2AO                :      0.017u      0.000s      0.002w     30 calls
+| JK: JK                    :      0.133u      0.017s      0.090w     30 calls
+| | PK computes JK          :      0.133u      0.017s      0.090w     30 calls
+| JK: AO2USO                :      0.017u      0.000s      0.003w     30 calls
+HF: Form F                  :      0.000u      0.000s      0.000w     30 calls
+HF: DIIS                    :      0.017u      0.000s      0.007w     30 calls
+| DIISManager::add_entry    :      0.000u      0.000s      0.001w     30 calls
+| DIISManager::extrapolate  :      0.017u      0.000s      0.003w     29 calls
+| | bMatrix setup           :      0.000u      0.000s      0.001w     29 calls
+| | bMatrix pseudoinverse   :      0.000u      0.000s      0.001w     29 calls
+| | New vector              :      0.017u      0.000s      0.001w     29 calls
+HF: Form C                  :      0.017u      0.000s      0.005w     30 calls
+HF: Form D                  :      0.000u      0.000s      0.000w     30 calls
+JK: D                       :      0.000u      0.000s      0.003w     57 calls
+JK: USO2AO                  :      0.067u      0.000s      0.047w     57 calls
+JK: JK                      :     23.333u      0.000s     13.994w     57 calls
+| PK computes JK            :     23.333u      0.000s     13.994w     57 calls
+JK: AO2USO                  :      0.100u      0.000s      0.043w     57 calls
+
+***********************************************************
+
+Host: ccqc-bullpen1
+
+Timers On : Tue Aug  7 19:11:55 2018
+Timers Off: Tue Aug  7 20:27:12 2018
+
+Wall Time:     4517.51 seconds
+
+
+-----------------------------------------------------------
+
+***********************************************************
+
+Host: ccqc-bullpen1
+
+Timers On : Sat Aug 11 16:18:00 2018
+Timers Off: Sat Aug 11 16:18:00 2018
+
+Wall Time:        0.11 seconds
+
+
+-----------------------------------------------------------
+
+***********************************************************
+
+Host: ccqc-bullpen1
+
+Timers On : Sat Aug 11 16:18:31 2018
+Timers Off: Sat Aug 11 16:18:31 2018
+
+Wall Time:        0.12 seconds
+
+
+-----------------------------------------------------------
+
+***********************************************************
+
+Host: ccqc-bullpen1
+
+Timers On : Sat Aug 11 16:18:47 2018
+Timers Off: Sat Aug 11 16:18:47 2018
+
+Wall Time:        0.11 seconds
+
+
+-----------------------------------------------------------
+
+***********************************************************
+
+Host: ccqc-bullpen1
+
+Timers On : Sat Aug 11 16:19:11 2018
+Timers Off: Sat Aug 11 16:19:11 2018
+
+Wall Time:        0.11 seconds
+
+
+-----------------------------------------------------------
+
+***********************************************************
+
+Host: ccqc-bullpen1
+
+Timers On : Sat Aug 11 16:19:44 2018
+Timers Off: Sat Aug 11 16:19:44 2018
+
+Wall Time:        0.12 seconds
+
+
+-----------------------------------------------------------
+
+***********************************************************
+
+Host: ccqc-bullpen1
+
+Timers On : Sat Aug 11 16:19:59 2018
+Timers Off: Sat Aug 11 16:19:59 2018
+
+Wall Time:        0.14 seconds
+
+
+-----------------------------------------------------------
+
+***********************************************************
+
+Host: ccqc-bullpen1
+
+Timers On : Sat Aug 11 16:21:51 2018
+Timers Off: Sat Aug 11 16:21:51 2018
+
+Wall Time:        0.12 seconds
+
+
+-----------------------------------------------------------
+
+***********************************************************
+
+Host: ccqc-bullpen1
+
+Timers On : Sat Aug 11 16:30:19 2018
+Timers Off: Sat Aug 11 16:30:19 2018
+
+Wall Time:        0.12 seconds
+
+
+-----------------------------------------------------------
+
+***********************************************************
+
+Host: ccqc-bullpen1
+
+Timers On : Sat Aug 11 16:54:29 2018
+Timers Off: Sat Aug 11 16:54:34 2018
+
+Wall Time:        5.04 seconds
+
+
+-----------------------------------------------------------
+
+***********************************************************
+
+Host: ccqc-bullpen1
+
+Timers On : Sat Aug 11 17:02:08 2018
+Timers Off: Sat Aug 11 17:02:46 2018
+
+Wall Time:       38.41 seconds
+
+
+-----------------------------------------------------------
+
+***********************************************************
+
+Host: ccqc-bullpen1
+
+Timers On : Sat Aug 11 17:03:32 2018
+Timers Off: Sat Aug 11 17:03:35 2018
+
+Wall Time:        2.18 seconds
+
+Total PK formation time     :      0.933u      0.067s      0.596w      1 calls
+HF: Form H                  :      0.000u      0.000s      0.001w      1 calls
+HF: Form S/X                :      0.000u      0.000s      0.000w      1 calls
+HF: Guess                   :      0.000u      0.000s      0.000w      1 calls
+HF: Form G                  :      1.933u      0.000s      1.172w    100 calls
+JK: D                       :      0.000u      0.000s      0.000w    100 calls
+JK: USO2AO                  :      0.017u      0.000s      0.008w    100 calls
+JK: JK                      :      1.867u      0.000s      1.149w    100 calls
+PK computes JK              :      1.867u      0.000s      1.149w    100 calls
+JK: AO2USO                  :      0.017u      0.000s      0.012w    100 calls
+HF: Form F                  :      0.000u      0.000s      0.001w    100 calls
+HF: DIIS                    :      0.000u      0.000s      0.005w    100 calls
+HF: Form C                  :      0.083u      0.000s      0.029w    100 calls
+HF: Form D                  :      0.000u      0.000s      0.001w    100 calls
+
+-----------------------------------------------------------
+Total PK formation time     :      0.933u      0.067s      0.596w      1 calls
+HF: Form H                  :      0.000u      0.000s      0.001w      1 calls
+HF: Form S/X                :      0.000u      0.000s      0.000w      1 calls
+HF: Guess                   :      0.000u      0.000s      0.000w      1 calls
+HF: Form G                  :      1.933u      0.000s      1.172w    100 calls
+| JK: D                     :      0.000u      0.000s      0.000w    100 calls
+| JK: USO2AO                :      0.017u      0.000s      0.008w    100 calls
+| JK: JK                    :      1.867u      0.000s      1.149w    100 calls
+| | PK computes JK          :      1.867u      0.000s      1.149w    100 calls
+| JK: AO2USO                :      0.017u      0.000s      0.012w    100 calls
+HF: Form F                  :      0.000u      0.000s      0.001w    100 calls
+HF: DIIS                    :      0.000u      0.000s      0.005w    100 calls
+HF: Form C                  :      0.083u      0.000s      0.029w    100 calls
+HF: Form D                  :      0.000u      0.000s      0.001w    100 calls
+
+***********************************************************
+
+Host: ccqc-bullpen1
+
+Timers On : Sat Aug 11 17:03:54 2018
+Timers Off: Sat Aug 11 17:03:55 2018
+
+Wall Time:        1.07 seconds
+
+Total PK formation time     :      0.933u      0.067s      0.591w      1 calls
+HF: Form H                  :      0.000u      0.000s      0.001w      1 calls
+HF: Form S/X                :      0.000u      0.000s      0.000w      1 calls
+HF: Guess                   :      0.000u      0.000s      0.000w      1 calls
+HF: Form G                  :      0.183u      0.000s      0.113w     10 calls
+JK: D                       :      0.000u      0.000s      0.000w     10 calls
+JK: USO2AO                  :      0.000u      0.000s      0.001w     10 calls
+JK: JK                      :      0.183u      0.000s      0.111w     10 calls
+PK computes JK              :      0.183u      0.000s      0.111w     10 calls
+JK: AO2USO                  :      0.000u      0.000s      0.001w     10 calls
+HF: Form F                  :      0.017u      0.000s      0.000w     10 calls
+HF: DIIS                    :      0.000u      0.000s      0.002w     10 calls
+DIISManager::add_entry      :      0.000u      0.000s      0.001w     10 calls
+DIISManager::extrapolate    :      0.000u      0.000s      0.001w      9 calls
+bMatrix setup               :      0.000u      0.000s      0.000w      9 calls
+bMatrix pseudoinverse       :      0.000u      0.000s      0.000w      9 calls
+New vector                  :      0.000u      0.000s      0.000w      9 calls
+HF: Form C                  :      0.000u      0.000s      0.002w     10 calls
+HF: Form D                  :      0.000u      0.000s      0.000w     10 calls
+
+-----------------------------------------------------------
+Total PK formation time     :      0.933u      0.067s      0.591w      1 calls
+HF: Form H                  :      0.000u      0.000s      0.001w      1 calls
+HF: Form S/X                :      0.000u      0.000s      0.000w      1 calls
+HF: Guess                   :      0.000u      0.000s      0.000w      1 calls
+HF: Form G                  :      0.183u      0.000s      0.113w     10 calls
+| JK: D                     :      0.000u      0.000s      0.000w     10 calls
+| JK: USO2AO                :      0.000u      0.000s      0.001w     10 calls
+| JK: JK                    :      0.183u      0.000s      0.111w     10 calls
+| | PK computes JK          :      0.183u      0.000s      0.111w     10 calls
+| JK: AO2USO                :      0.000u      0.000s      0.001w     10 calls
+HF: Form F                  :      0.017u      0.000s      0.000w     10 calls
+HF: DIIS                    :      0.000u      0.000s      0.002w     10 calls
+| DIISManager::add_entry    :      0.000u      0.000s      0.001w     10 calls
+| DIISManager::extrapolate  :      0.000u      0.000s      0.001w      9 calls
+| | bMatrix setup           :      0.000u      0.000s      0.000w      9 calls
+| | bMatrix pseudoinverse   :      0.000u      0.000s      0.000w      9 calls
+| | New vector              :      0.000u      0.000s      0.000w      9 calls
+HF: Form C                  :      0.000u      0.000s      0.002w     10 calls
+HF: Form D                  :      0.000u      0.000s      0.000w     10 calls
+
+***********************************************************
+
+Host: ccqc-bullpen1
+
+Timers On : Sat Aug 11 17:05:04 2018
+Timers Off: Sat Aug 11 17:05:30 2018
+
+Wall Time:       26.25 seconds
+
+
+-----------------------------------------------------------
+
+***********************************************************
+
+Host: ccqc-bullpen1
+
+Timers On : Sat Aug 11 17:07:23 2018
+Timers Off: Sat Aug 11 17:07:24 2018
+
+Wall Time:        1.12 seconds
+
+Total PK formation time     :      0.983u      0.067s      0.625w      1 calls
+HF: Form H                  :      0.000u      0.000s      0.002w      1 calls
+HF: Form S/X                :      0.000u      0.017s      0.000w      1 calls
+HF: Guess                   :      0.000u      0.000s      0.000w      1 calls
+HF: Form G                  :      0.267u      0.000s      0.171w     13 calls
+JK: D                       :      0.000u      0.000s      0.000w     13 calls
+JK: USO2AO                  :      0.000u      0.000s      0.001w     13 calls
+JK: JK                      :      0.250u      0.000s      0.168w     13 calls
+PK computes JK              :      0.250u      0.000s      0.168w     13 calls
+JK: AO2USO                  :      0.017u      0.000s      0.002w     13 calls
+HF: Form F                  :      0.000u      0.000s      0.000w     13 calls
+HF: DIIS                    :      0.000u      0.000s      0.003w     13 calls
+DIISManager::add_entry      :      0.000u      0.000s      0.001w     13 calls
+DIISManager::extrapolate    :      0.000u      0.000s      0.002w     12 calls
+bMatrix setup               :      0.000u      0.000s      0.001w     12 calls
+bMatrix pseudoinverse       :      0.000u      0.000s      0.001w     12 calls
+New vector                  :      0.000u      0.000s      0.001w     12 calls
+HF: Form C                  :      0.000u      0.000s      0.003w     13 calls
+HF: Form D                  :      0.017u      0.000s      0.000w     13 calls
+
+-----------------------------------------------------------
+Total PK formation time     :      0.983u      0.067s      0.625w      1 calls
+HF: Form H                  :      0.000u      0.000s      0.002w      1 calls
+HF: Form S/X                :      0.000u      0.017s      0.000w      1 calls
+HF: Guess                   :      0.000u      0.000s      0.000w      1 calls
+HF: Form G                  :      0.267u      0.000s      0.171w     13 calls
+| JK: D                     :      0.000u      0.000s      0.000w     13 calls
+| JK: USO2AO                :      0.000u      0.000s      0.001w     13 calls
+| JK: JK                    :      0.250u      0.000s      0.168w     13 calls
+| | PK computes JK          :      0.250u      0.000s      0.168w     13 calls
+| JK: AO2USO                :      0.017u      0.000s      0.002w     13 calls
+HF: Form F                  :      0.000u      0.000s      0.000w     13 calls
+HF: DIIS                    :      0.000u      0.000s      0.003w     13 calls
+| DIISManager::add_entry    :      0.000u      0.000s      0.001w     13 calls
+| DIISManager::extrapolate  :      0.000u      0.000s      0.002w     12 calls
+| | bMatrix setup           :      0.000u      0.000s      0.001w     12 calls
+| | bMatrix pseudoinverse   :      0.000u      0.000s      0.001w     12 calls
+| | New vector              :      0.000u      0.000s      0.001w     12 calls
+HF: Form C                  :      0.000u      0.000s      0.003w     13 calls
+HF: Form D                  :      0.017u      0.000s      0.000w     13 calls
+
+***********************************************************
+
+Host: ccqc-bullpen1
+
+Timers On : Sun Aug 12 17:59:47 2018
+Timers Off: Sun Aug 12 17:59:49 2018
+
+Wall Time:        1.28 seconds
+
+
+-----------------------------------------------------------
+
+***********************************************************
+
+Host: ccqc-bullpen1
+
+Timers On : Sun Aug 12 18:00:25 2018
+Timers Off: Sun Aug 12 18:00:27 2018
+
+Wall Time:        1.37 seconds
+
+
+-----------------------------------------------------------
+
+***********************************************************

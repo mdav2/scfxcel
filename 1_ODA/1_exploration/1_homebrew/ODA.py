@@ -1,3 +1,4 @@
+import matplotlib.pyplot as plt
 import numpy as np
 import psi4
 import hftools
@@ -50,14 +51,15 @@ def oda_step(data, converged, dE_crit):
     g = data['g']
     gt = data['gt']
 
-    nu = hftools.assemble_nu(g, gt, Dkp)
-    
-    Fkp = hftools.assemble_fock(h, nu, Dkp)
+    nup = hftools.assemble_nu(g, gt, Dkp)
+    Fkp = hftools.assemble_fock(h, nup, Dkp)
+    nut = hftools.assemble_nu(g, gt, Dkt)
+    Fkt = hftools.assemble_fock(h, nut, Dkt)
 
     data['Fs'].append(Fkp)
     
-    Ekp = hftools.compute_energy(h, nu, Dkp) + data['Enuc']
-    dE = abs(Ekp - data['Ekp'])
+    Ekp = hftools.compute_energy(h, nup, Dkp) + data['Enuc']
+    dE = Ekp - data['Ekp']
     print('dE: {}'.format(dE))
 
     if dE < dE_crit and oda_compare_D(Dkp, data['Dkt']): 
@@ -67,8 +69,13 @@ def oda_step(data, converged, dE_crit):
     #print(Ekp)
     data['dk'] = Dkp - data['Dkt']
     #print(data['dk'])
-
-    l = oda_line_search(Dkt, data['dk'], g, gt, h)
+    l_new = oda_new_analytic(Fkp, Fkt, Dkp, Dkt)
+    
+    #l_analytic = oda_line_search(Dkt, data['dk'], Dkp, g, gt, h, analytic=True)
+    #l_numerical = oda_line_search(Dkt, data['dk'], Dkp, g, gt, h, analytic=False)
+    #print('ANALYTIC L : {}'.format(l_analytic))
+    #print('NUMERICAL L: {}'.format(l_numerical))
+    l = l_new
     Dkpt = (1 - l)*data['Dkt'] + l*Dkp
     Fkpt = (1 - l)*data['Fkt'] + l*Fkp
 
@@ -76,6 +83,22 @@ def oda_step(data, converged, dE_crit):
     data['Fkt'] = Fkpt
     data['k'] += 1
     
+def oda_new_analytic(Fkp, Fkt, Dkp, Dkt):
+    s = oda_calc_s(Fkt, Dkp, Dkt)
+    c = oda_calc_c(Fkp, Fkt, Dkp, Dkt)
+    if c <= -1*s/2:
+        l = 1
+    else:
+        l = -1*s/(2*c)
+    print(l)
+    return l
+
+def oda_calc_s(Fkt, Dkp, Dkt):
+    return np.trace((np.matmul(Fkt,(Dkp - Dkt))))
+
+def oda_calc_c(Fkp, Fkt, Dkp, Dkt):
+    return np.trace((np.matmul((Fkp - Fkt),(Dkp - Dkt))))
+
 def oda(mol,ref='rhf',basis='sto-3g', iterlim=50, dE_crit=1E-6):
     data = oda_init(mol,ref,basis)
     E = 0
@@ -88,7 +111,7 @@ def oda(mol,ref='rhf',basis='sto-3g', iterlim=50, dE_crit=1E-6):
 def oda_compare_D(Dkp, Dk):
     diff = Dkp - Dk 
     #print(np.trace(diff)/diff.shape[0])
-    if abs(np.trace(diff)/diff.shape[0]) < 1E-10:
+    if abs(np.trace(diff)/diff.shape[0]) < 1E-8:
         return True
     #    return True
     #else:
@@ -112,8 +135,25 @@ def get_dist_to_roots(back_E,center_E,forward_E):
     return x0
 
 def analytic_line_search(Dk, Dk_, g, gt, h):
+    #TODO: implement 
+    pass
 
-def oda_line_search(Dk, dk, g, gt, h):
+def oda_line_search(Dk, dk, Dkp, g, gt, h, analytic=False):
+    #TODO: changed the input to Dk and Dkp rather than dk, need to change\
+    #the numerical implementation if desired.
+
+    v = hftools.assemble_nu(g, gt, Dk)
+    vp = hftools.assemble_nu(g, gt, Dkp)
+    if analytic:
+        hd   = hftools.sum_mats(h, Dk)        
+        hdp  = hftools.sum_mats(h, Dkp)
+        vd   = hftools.sum_mats(v, Dk)
+        vdp  = hftools.sum_mats(v, Dkp)
+        vpd  = hftools.sum_mats(vp, Dk)
+        vpdp = hftools.sum_mats(vp, Dkp)
+        
+        l = -1*(-1*hd - hdp + vd + 0.5*vdp + 0.5*vpd)/(vd + vdp + vpd + vpdp)
+        return l
     lower = 0
     higher = 1
     delim = 0.5
@@ -135,6 +175,18 @@ def oda_line_search(Dk, dk, g, gt, h):
     print('E1 {} E2 {}'.format(E1,E2))
     print('ODA LINE SEARCH/MICRO\n')
     #return l
+    #xs = np.linspace(0, 1, 101)
+    #Es = []
+    #for x in xs:
+    #    print(x)
+    #    nu_temp = hftools.assemble_nu(g, gt, Dk + x*dk)
+    #    E_temp = hftools.compute_energy(h, nu_temp, Dk + x*dk)
+    #    Es.append(E_temp)    
+    #d = 1E-12
+    #plt.ylim((1+d)*min(Es),(1-d)*max(Es))
+    #plt.plot(xs,Es,'g-')
+    #plt.show()
+    dE_init = abs(E1 - E2)
     while True:
         if float(E1) < float(E2):
             #print('LOW')
@@ -150,25 +202,28 @@ def oda_line_search(Dk, dk, g, gt, h):
         E1 = hftools.compute_energy(h, nu1, Dk + p1*dk)
         E2 = hftools.compute_energy(h, nu2, Dk + p2*dk)
         #print('ODA Line search.\nE1: {}\nE2: {}\n'.format(E1,E2))
-        print('Es')
-        print(abs(E2-E1))
-        if abs(E2 - E1) < 1E-10:
+        #print('Es')
+        #print(abs(E2-E1))
+        if abs(E2 - E1)/dE_init < 1E-8:
             l = (p1 + p2)/2
-            print('Lambda:\n')
-            print(l)
+            #print('Lambda:\n')
+            #print(l)
             return l
+    
+        
 
 if __name__ == "__main__":
     mol = psi4.geometry("""
     0 1
-    N
-    N 1 2.8
+    O
+    H 1 1.1
+    H 1 1.1 2 104
     """)
     #silence psi4 and make scf_type pk to match this code
     psi4.core.be_quiet()
     psi4.set_options({'scf_type':'pk'})
 
-    E=oda(mol, basis='aug-cc-pvdz', iterlim=50, dE_crit=1E-10) 
+    E=oda(mol, basis='aug-cc-pvdz', iterlim=1000, dE_crit=1E-10) 
     #psi_energy=psi4.energy('scf/sto-3g',molecule=mol)
     #dE=E-psi_energy
     #psi_match=abs(dE)<1E-6 #agreement between psi4 and this code?

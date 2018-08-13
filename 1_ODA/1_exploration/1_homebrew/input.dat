@@ -1,0 +1,19 @@
+memory 1 GB
+
+molecule h2o {
+0 1
+O
+H 1 0.968
+H 1 0.968 2 104.5
+}
+
+set reference rhf
+set basis aug-cc-pvtz
+set guess core
+set scf_type pk
+set df_basis_guess false
+set freeze_core false
+set DIIS true
+set E_CONVERGENCE 1E-10
+set D_CONVERGENCE 1E-8
+energy('scf')

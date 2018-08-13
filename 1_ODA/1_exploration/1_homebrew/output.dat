@@ -1,0 +1,286 @@
+
+    -----------------------------------------------------------------------
+          Psi4: An Open-Source Ab Initio Electronic Structure Package
+                               Psi4 1.2.1 release
+
+                         Git: Rev {HEAD} 406f4de 
+
+
+    R. M. Parrish, L. A. Burns, D. G. A. Smith, A. C. Simmonett,
+    A. E. DePrince III, E. G. Hohenstein, U. Bozkaya, A. Yu. Sokolov,
+    R. Di Remigio, R. M. Richard, J. F. Gonthier, A. M. James,
+    H. R. McAlexander, A. Kumar, M. Saitow, X. Wang, B. P. Pritchard,
+    P. Verma, H. F. Schaefer III, K. Patkowski, R. A. King, E. F. Valeev,
+    F. A. Evangelista, J. M. Turney, T. D. Crawford, and C. D. Sherrill,
+    J. Chem. Theory Comput. 13(7) pp 3185--3197 (2017).
+    (doi: 10.1021/acs.jctc.7b00174)
+
+
+                         Additional Contributions by
+    P. Kraus, H. Kruse, M. H. Lechner, M. C. Schieber, and R. A. Shaw
+
+    -----------------------------------------------------------------------
+
+
+    Psi4 started on: Saturday, 11 August 2018 05:07PM
+
+    Process ID: 16328
+    Host:       ccqc-bullpen1
+    PSIDATADIR: /home/mmd01986/anaconda3/envs/psi4/share/psi4
+    Memory:     500.0 MiB
+    Threads:    1
+    
+  ==> Input File <==
+
+--------------------------------------------------------------------------
+memory 1 GB
+
+molecule h2o {
+0 1
+O
+H 1 0.968
+H 1 0.968 2 104.5
+}
+
+set reference rhf
+set basis aug-cc-pvtz
+set guess core
+set scf_type pk
+set df_basis_guess false
+set freeze_core false
+set DIIS true
+set E_CONVERGENCE 1E-10
+set D_CONVERGENCE 1E-8
+energy('scf')
+--------------------------------------------------------------------------
+
+  Memory set to 953.674 MiB by Python driver.
+
+*** tstart() called on ccqc-bullpen1
+*** at Sat Aug 11 17:07:23 2018
+
+   => Loading Basis Set <=
+
+    Name: AUG-CC-PVTZ
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1   entry O          line   327 file /home/mmd01986/anaconda3/envs/psi4/share/psi4/basis/aug-cc-pvtz.gbs 
+    atoms 2-3 entry H          line    36 file /home/mmd01986/anaconda3/envs/psi4/share/psi4/basis/aug-cc-pvtz.gbs 
+
+
+         ---------------------------------------------------------
+                                   SCF
+            by Justin Turney, Rob Parrish, Andy Simmonett
+                             and Daniel Smith
+                              RHF Reference
+                        1 Threads,    953 MiB Core
+         ---------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: c2v
+    Full point group: C2v
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         O            0.000000000000     0.000000000000    -0.066323700292    15.994914619560
+         H            0.000000000000    -0.765387507384     0.526302626781     1.007825032070
+         H            0.000000000000     0.765387507384     0.526302626781     1.007825032070
+
+  Running in c2v symmetry.
+
+  Rotational constants: A =     26.81420  B =     14.27640  C =      9.31625 [cm^-1]
+  Rotational constants: A = 803869.55495  B = 427995.61598  C = 279294.07654 [MHz]
+  Nuclear repulsion =    9.092423068152961
+
+  Charge       = 0
+  Multiplicity = 1
+  Electrons    = 10
+  Nalpha       = 5
+  Nbeta        = 5
+
+  ==> Algorithm <==
+
+  SCF Algorithm Type is PK.
+  DIIS enabled.
+  MOM disabled.
+  Fractional occupation disabled.
+  Guess Type is CORE.
+  Energy threshold   = 1.00e-10
+  Density threshold  = 1.00e-08
+  Integral threshold = 0.00e+00
+
+  ==> Primary Basis <==
+
+  Basis Set: AUG-CC-PVTZ
+    Blend: AUG-CC-PVTZ
+    Number of shells: 32
+    Number of basis function: 92
+    Number of Cartesian functions: 105
+    Spherical Harmonics?: true
+    Max angular momentum: 3
+
+  ==> Pre-Iterations <==
+
+   -------------------------------------------------------
+    Irrep   Nso     Nmo     Nalpha   Nbeta   Ndocc  Nsocc
+   -------------------------------------------------------
+     A1        35      35       0       0       0       0
+     A2        12      12       0       0       0       0
+     B1        18      18       0       0       0       0
+     B2        27      27       0       0       0       0
+   -------------------------------------------------------
+    Total      92      92       5       5       5       0
+   -------------------------------------------------------
+
+  ==> Integral Setup <==
+
+  Using in-core PK algorithm.
+   Calculation information:
+      Number of atoms:                   3
+      Number of AO shells:              32
+      Number of primitives:             52
+      Number of atomic orbitals:       105
+      Number of basis functions:        92
+
+      Integral cutoff                 1.00e-12
+      Number of threads:                 1
+
+  Performing in-core PK
+  Using 18305562 doubles for integral storage.
+  We computed 139656 shell quartets total.
+  Whereas there are 139656 unique shell quartets.
+
+  ==> DiskJK: Disk-Based J/K Matrices <==
+
+    J tasked:                  Yes
+    K tasked:                  Yes
+    wK tasked:                  No
+    Memory (MB):               715
+    Schwarz Cutoff:          1E-12
+
+    OpenMP threads:              1
+
+  Minimum eigenvalue in the overlap matrix is 3.9393150119E-04.
+  Using Symmetric Orthogonalization.
+
+  SCF Guess: Core (One-Electron) Hamiltonian.
+
+  ==> Iterations <==
+
+                        Total Energy        Delta E     RMS |[F,P]|
+
+    Occupation by irrep:
+             A1    A2    B1    B2 
+    DOCC [     3,    0,    0,    2 ]
+
+   @RHF iter   1:   -61.30171915421533   -6.13017e+01   1.62770e-01 
+    Occupation by irrep:
+             A1    A2    B1    B2 
+    DOCC [     3,    0,    1,    1 ]
+
+   @RHF iter   2:   -63.69829746645491   -2.39658e+00   5.97084e-02 DIIS
+   @RHF iter   3:   -72.83371664112116   -9.13542e+00   6.76214e-02 DIIS
+   @RHF iter   4:   -75.31067530062100   -2.47696e+00   2.93499e-02 DIIS
+   @RHF iter   5:   -76.04306030726742   -7.32385e-01   3.35299e-03 DIIS
+   @RHF iter   6:   -76.05912353632014   -1.60632e-02   8.28207e-04 DIIS
+   @RHF iter   7:   -76.05965925643930   -5.35720e-04   1.63462e-04 DIIS
+   @RHF iter   8:   -76.05968675839544   -2.75020e-05   3.06135e-05 DIIS
+   @RHF iter   9:   -76.05968806829192   -1.30990e-06   4.10740e-06 DIIS
+   @RHF iter  10:   -76.05968810920014   -4.09082e-08   9.69125e-07 DIIS
+   @RHF iter  11:   -76.05968811059662   -1.39649e-09   2.32675e-07 DIIS
+   @RHF iter  12:   -76.05968811066529   -6.86668e-11   2.61024e-08 DIIS
+   @RHF iter  13:   -76.05968811066687   -1.57740e-12   4.68868e-09 DIIS
+
+  ==> Post-Iterations <==
+
+    Orbital Energies [Eh]
+    ---------------------
+
+    Doubly Occupied:                                                      
+
+       1A1   -20.569092     2A1    -1.348113     1B2    -0.711950  
+       3A1    -0.582910     1B1    -0.509485  
+
+    Virtual:                                                              
+
+       4A1     0.029306     2B2     0.047642     5A1     0.135916  
+       2B1     0.159051     6A1     0.174848     3B2     0.182997  
+       4B2     0.226626     7A1     0.244557     1A2     0.265195  
+       3B1     0.300084     8A1     0.310137     5B2     0.365470  
+       9A1     0.435925     6B2     0.464759     7B2     0.599042  
+      10A1     0.657376    11A1     0.707980     2A2     0.722448  
+       4B1     0.731926    12A1     0.827941     5B1     0.845261  
+      13A1     0.893307     8B2     0.911022     6B1     0.919584  
+       3A2     0.921371     9B2     0.929773    14A1     0.961516  
+      15A1     1.018194    10B2     1.040866     7B1     1.081709  
+      11B2     1.107225     4A2     1.174113    16A1     1.178932  
+      12B2     1.263386     5A2     1.507913    17A1     1.538948  
+       8B1     1.579574    18A1     1.808010    13B2     1.811123  
+      14B2     1.976626    19A1     2.110025     9B1     2.261440  
+       6A2     2.314045    20A1     2.327566    21A1     2.416455  
+      10B1     2.418433    15B2     2.442842    22A1     2.479270  
+      16B2     2.682873    11B1     2.699960    23A1     2.762484  
+      17B2     2.817355     7A2     2.879990    18B2     3.639822  
+      24A1     3.734057     8A2     4.010093    12B1     4.075125  
+      25A1     4.164113    19B2     4.234332    13B1     4.288014  
+       9A2     4.373890    26A1     4.378141    14B1     4.397565  
+      20B2     4.508668    27A1     4.713229    21B2     4.819935  
+      22B2     5.128512    10A2     5.130534    23B2     5.242070  
+      28A1     5.294944    15B1     5.497660    29A1     5.654767  
+      30A1     6.162458    24B2     6.516481    16B1     6.706522  
+      31A1     6.878972    17B1     7.124402    18B1     7.244641  
+      25B2     7.288993    11A2     7.293941    32A1     7.323104  
+      12A2     7.353632    33A1     7.510635    34A1     7.890338  
+      26B2     7.896183    27B2     8.760335    35A1    15.502719  
+
+    Final Occupation by Irrep:
+             A1    A2    B1    B2 
+    DOCC [     3,    0,    1,    1 ]
+
+  Energy converged.
+
+  @RHF Final Energy:   -76.05968811066687
+
+   => Energetics <=
+
+    Nuclear Repulsion Energy =              9.0924230681529608
+    One-Electron Energy =                -122.8611219777065315
+    Two-Electron Energy =                  37.7090107988866947
+    Total Energy =                        -76.0596881106668690
+
+
+
+Properties will be evaluated at   0.000000,   0.000000,   0.000000 [a0]
+
+Properties computed using the SCF density matrix
+
+  Nuclear Dipole Moment: [e a0]
+     X:     0.0000      Y:     0.0000      Z:     0.9865
+
+  Electronic Dipole Moment: [e a0]
+     X:     0.0000      Y:     0.0000      Z:    -0.2029
+
+  Dipole Moment: [e a0]
+     X:     0.0000      Y:     0.0000      Z:     0.7836     Total:     0.7836
+
+  Dipole Moment: [D]
+     X:     0.0000      Y:     0.0000      Z:     1.9916     Total:     1.9916
+
+
+*** tstop() called on ccqc-bullpen1 at Sat Aug 11 17:07:24 2018
+Module time:
+	user time   =       0.87 seconds =       0.01 minutes
+	system time =       0.06 seconds =       0.00 minutes
+	total time  =          1 seconds =       0.02 minutes
+Total time:
+	user time   =       0.87 seconds =       0.01 minutes
+	system time =       0.06 seconds =       0.00 minutes
+	total time  =          1 seconds =       0.02 minutes
+
+    Psi4 stopped on: Saturday, 11 August 2018 05:07PM
+    Psi4 wall time for execution: 0:00:00.97
+
+*** Psi4 exiting successfully. Buy a developer a beer!
