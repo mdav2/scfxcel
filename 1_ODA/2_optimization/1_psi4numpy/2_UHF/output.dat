@@ -1,0 +1,23 @@
+   => Loading Basis Set <=
+
+    Name: AUG-CC-PVDZ
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1-2 entry O          line   250 file /home/mmd01986/anaconda3/envs/psi4/share/psi4/basis/aug-cc-pvdz.gbs 
+
+  Using in-core PK algorithm.
+   Calculation information:
+      Number of atoms:                   2
+      Number of AO shells:              18
+      Number of primitives:             50
+      Number of atomic orbitals:        50
+      Number of basis functions:        46
+
+      Integral cutoff                 1.00e-12
+      Number of threads:                 1
+
+  Performing in-core PK
+  Using 1169642 doubles for integral storage.
+  We computed 14706 shell quartets total.
+  Whereas there are 14706 unique shell quartets.
+

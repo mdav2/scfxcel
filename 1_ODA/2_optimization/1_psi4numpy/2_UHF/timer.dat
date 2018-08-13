@@ -1,0 +1,136 @@
+
+Host: ccqc-bullpen1
+
+Timers On : Mon Aug 13 09:03:34 2018
+Timers Off: Mon Aug 13 09:03:34 2018
+
+Wall Time:        0.14 seconds
+
+
+-----------------------------------------------------------
+
+***********************************************************
+
+Host: ccqc-bullpen1
+
+Timers On : Mon Aug 13 09:04:01 2018
+Timers Off: Mon Aug 13 09:04:01 2018
+
+Wall Time:        0.22 seconds
+
+Total PK formation time     :      0.133u      0.017s      0.083w      1 calls
+
+-----------------------------------------------------------
+Total PK formation time     :      0.133u      0.017s      0.083w      1 calls
+
+***********************************************************
+
+Host: ccqc-bullpen1
+
+Timers On : Mon Aug 13 09:08:09 2018
+Timers Off: Mon Aug 13 09:08:09 2018
+
+Wall Time:        0.24 seconds
+
+Total PK formation time     :      0.150u      0.000s      0.083w      1 calls
+
+-----------------------------------------------------------
+Total PK formation time     :      0.150u      0.000s      0.083w      1 calls
+
+***********************************************************
+
+Host: ccqc-bullpen1
+
+Timers On : Mon Aug 13 09:10:19 2018
+Timers Off: Mon Aug 13 09:10:19 2018
+
+Wall Time:        0.23 seconds
+
+Total PK formation time     :      0.133u      0.017s      0.083w      1 calls
+JK: D                       :      0.000u      0.000s      0.000w      1 calls
+JK: USO2AO                  :      0.000u      0.000s      0.000w      1 calls
+JK: JK                      :      0.000u      0.000s      0.001w      1 calls
+PK computes JK              :      0.000u      0.000s      0.001w      1 calls
+JK: AO2USO                  :      0.000u      0.000s      0.000w      1 calls
+
+-----------------------------------------------------------
+Total PK formation time     :      0.133u      0.017s      0.083w      1 calls
+JK: D                       :      0.000u      0.000s      0.000w      1 calls
+JK: USO2AO                  :      0.000u      0.000s      0.000w      1 calls
+JK: JK                      :      0.000u      0.000s      0.001w      1 calls
+| PK computes JK            :      0.000u      0.000s      0.001w      1 calls
+JK: AO2USO                  :      0.000u      0.000s      0.000w      1 calls
+
+***********************************************************
+
+Host: ccqc-bullpen1
+
+Timers On : Mon Aug 13 09:10:43 2018
+Timers Off: Mon Aug 13 09:10:43 2018
+
+Wall Time:        0.23 seconds
+
+Total PK formation time     :      0.133u      0.000s      0.083w      1 calls
+JK: D                       :      0.000u      0.000s      0.000w      2 calls
+JK: USO2AO                  :      0.000u      0.000s      0.000w      2 calls
+JK: JK                      :      0.000u      0.000s      0.002w      2 calls
+PK computes JK              :      0.000u      0.000s      0.002w      2 calls
+JK: AO2USO                  :      0.000u      0.000s      0.000w      2 calls
+
+-----------------------------------------------------------
+Total PK formation time     :      0.133u      0.000s      0.083w      1 calls
+JK: D                       :      0.000u      0.000s      0.000w      2 calls
+JK: USO2AO                  :      0.000u      0.000s      0.000w      2 calls
+JK: JK                      :      0.000u      0.000s      0.002w      2 calls
+| PK computes JK            :      0.000u      0.000s      0.002w      2 calls
+JK: AO2USO                  :      0.000u      0.000s      0.000w      2 calls
+
+***********************************************************
+
+Host: ccqc-bullpen1
+
+Timers On : Mon Aug 13 09:11:26 2018
+Timers Off: Mon Aug 13 09:11:26 2018
+
+Wall Time:        0.27 seconds
+
+Total PK formation time     :      0.150u      0.000s      0.083w      1 calls
+JK: D                       :      0.000u      0.000s      0.000w     19 calls
+JK: USO2AO                  :      0.000u      0.000s      0.000w     19 calls
+JK: JK                      :      0.017u      0.000s      0.014w     19 calls
+PK computes JK              :      0.017u      0.000s      0.014w     19 calls
+JK: AO2USO                  :      0.000u      0.000s      0.000w     19 calls
+
+-----------------------------------------------------------
+Total PK formation time     :      0.150u      0.000s      0.083w      1 calls
+JK: D                       :      0.000u      0.000s      0.000w     19 calls
+JK: USO2AO                  :      0.000u      0.000s      0.000w     19 calls
+JK: JK                      :      0.017u      0.000s      0.014w     19 calls
+| PK computes JK            :      0.017u      0.000s      0.014w     19 calls
+JK: AO2USO                  :      0.000u      0.000s      0.000w     19 calls
+
+***********************************************************
+
+Host: ccqc-bullpen1
+
+Timers On : Mon Aug 13 09:15:45 2018
+Timers Off: Mon Aug 13 09:15:46 2018
+
+Wall Time:        0.25 seconds
+
+Total PK formation time     :      0.133u      0.000s      0.083w      1 calls
+JK: D                       :      0.000u      0.000s      0.000w     19 calls
+JK: USO2AO                  :      0.000u      0.000s      0.000w     19 calls
+JK: JK                      :      0.033u      0.000s      0.014w     19 calls
+PK computes JK              :      0.033u      0.000s      0.014w     19 calls
+JK: AO2USO                  :      0.000u      0.000s      0.000w     19 calls
+
+-----------------------------------------------------------
+Total PK formation time     :      0.133u      0.000s      0.083w      1 calls
+JK: D                       :      0.000u      0.000s      0.000w     19 calls
+JK: USO2AO                  :      0.000u      0.000s      0.000w     19 calls
+JK: JK                      :      0.033u      0.000s      0.014w     19 calls
+| PK computes JK            :      0.033u      0.000s      0.014w     19 calls
+JK: AO2USO                  :      0.000u      0.000s      0.000w     19 calls
+
+***********************************************************
